@@ -8,18 +8,97 @@
 
     <title></title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="src/_preflight.css" />
-    
-    <!-- Font -->
-
     <!-- JS Modules -->
     <script type="module" src="src/main.ts" async></script>
     <script type="module" src="src/_authorModal.ts" async></script>
   </head>
   <body>
-    <main>
-     <h1 class="sr-only"></h1>
+    <main
+      class="min-h-screen grid bg-mobile bg-no-repeat bg-cover relative"
+      after="content-empty absolute inset-0 bg-black-russian opacity-90"
+      tablet="bg-tablet bg-black-russian bg-auto after:hidden"
+      desktop="bg-desktop"
+    >
+      <h1 class="sr-only"></h1>
+      <div class="relative z-1 h-full">
+        <img
+          class="my-6.2/5.7 mx-auto w-13.4851 h-5.6 bg-cover"
+          tablet="mt-5 ml-3.9 mb-0"
+          desktop="mt-10.2 ml-16.5 mb-0"
+          src="/desktop/logo.svg"
+          alt=""
+        />
+        <div
+          tablet="bg-black-russian mt-15.2 ml-3.9 max-w-63.5 pt-9.3 grid"
+          desktop="mt-10.3 ml-16.5 max-w-72.3 pt-8.8"
+        >
+          <div class="ta-center px-2.4 fw-100" tablet="ta-start px-0 order-0">
+            <h2
+              class="c-white fs-2.6 lh-3.8 uppercase"
+              tablet="fs-4.8 lh-5.6"
+              desktop="fs-5.2 lh-6.2"
+            >
+              <span class="c-medium-aquamarine">Publish your podcasts</span>
+              everywhere.
+            </h2>
+            <p
+              class="mt-1.6 c-periwinkle fs-1.5 lh-2.5"
+              tablet="mt-3.1 fs-1.8 lh-2.8 max-w-44.5"
+              desktop="mt-2.4"
+            >
+              Upload your audio to Pod with a single click. We&apos;ll then
+              distribute your podcast to Spotify, Apple Podcasts, Google
+              Podcasts, Pocket Casts and more!
+            </p>
+          </div>
+          <div
+            class="mt-3.3 px-3 flex justify-between items-center justify-center"
+            tablet="order-3 mt-6.4 px-0 max-w-53.5957"
+          >
+            <img
+              class="w-5.6 h-1.5 object-contain"
+              tablet="w-9.6 h-2.9"
+              src="/desktop/spotify.svg"
+              alt=""
+            />
+            <img
+              class="w-4.5 h-1.5 object-contain"
+              tablet="w-7.8 h-2.9"
+              src="/desktop/apple-podcast.svg"
+              alt=""
+            />
+            <img
+              class="w-7.3 h-1.5 object-contain"
+              tablet="w-12.5 h-1.8"
+              src="/desktop/google-podcasts.svg"
+              alt=""
+            />
+            <img
+              class="w-7.7 h-1.5 object-contain"
+              tablet="w-12.9 h-2.6"
+              src="/desktop/pocket-casts.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="mt-4.8 px-2.4 flex flex-col"
+            tablet="order-2 mt-4 px-0 block relative max-w-42.7"
+          >
+            <input
+              class="c-white fs-1.4 lh-2.8 py-.9 px-3.2 br-2.8 bg-bunting"
+              tablet="w-full py-1.4"
+              type="email"
+              placeholder="Email address"
+            />
+            <button
+              class="mt-1.6 c-black-russian fs-1.4 lh-2.8 py-.9 br-2.8 bg-medium-aquamarine"
+              tablet="mt-0 px-2.7 absolute top-.5 right-.5 h-4.6"
+            >
+              Request Access
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>

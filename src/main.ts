@@ -1,5 +1,5 @@
 import "@unocss/reset/tailwind.css";
-import "virtual:uno.css";;
+import "virtual:uno.css";
 
 function changeTextContent(element: HTMLTitleElement | Element | null) {
   if (!element) return;
@@ -13,4 +13,6 @@ function changeTextContent(element: HTMLTitleElement | Element | null) {
 
   const heading = document.querySelector(".sr-only");
   changeTextContent(heading);
+
+  document.documentElement.setAttribute("data-theme", "dark");
 })();
